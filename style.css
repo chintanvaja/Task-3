@@ -1,0 +1,195 @@
+* {
+    outline: 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .add-todo-wrap .addButton, .add-todo-wrap .addIcon, .add-todo-wrap {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  body {
+    background: #cdd4d0;
+    font-size: 15px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+  }
+  
+  .todo-wrapper {
+    background: #d8deea;
+    width: 580px;
+    margin: 60px auto;
+    display: table;
+    -webkit-box-shadow: 0 0 30px #259d9d;
+    box-shadow: 0 0 30px #259d9d;
+  }
+  .todo-wrapper .title {
+    background: #259d9d !important;
+    padding: 15px 30px;
+    color: #fff;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+  }
+  .todo-wrapper .title h1 {
+    font-weight: 400;
+  }
+  
+  .add-todo-wrap {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .add-todo-wrap.active {
+    margin: 15px -15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .add-todo-wrap.active .addIcon {
+    -webkit-transform : scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  .add-todo-wrap.active input[type=text] {
+    padding-left: 25px;
+  }
+  .add-todo-wrap .addIcon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    color: #259d9d;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(-50%);
+    /* transform: translateY(-50%);
+    transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+  .add-todo-wrap input[type=text] {
+    background: #fff;
+    padding: 15px 75px 15px 70px;
+    border: 0;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: #666;
+    height: 70px;
+    width: 100%;
+    border: 0;
+  }
+  .add-todo-wrap input[type=text]::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  .add-todo-wrap .addButton {
+    background: transparent;
+    color: #ccc;
+    font-size: 24px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70px;
+    min-width: 75px;
+    border: 0;
+    /* pointer-event: none; */
+  }
+  .add-todo-wrap .addButton.active {
+    cursor: pointer;
+    /* pointer-event: auto; */
+    color: #259d9d;
+  }
+  
+  .todo-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .todo-list ul li {
+    position: relative;
+    background: #fff;
+    padding: 25px 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    color: #666;
+    height: 70px;
+  }
+  .todo-list ul li.editMode .editField {
+    display: block !important;
+  }
+  .todo-list ul li::after {
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #ddd;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  
+  .editField {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    display: block;
+    font-size: 19px;
+    display: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 70px;
+    text-align: right;
+  }
+  .button-group .mdi {
+    display: table-cell;
+    font-size: 24px;
+    color: #666;
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .button-group .mdi:hover {
+    color: #259d9d;
+  }

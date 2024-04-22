@@ -1,0 +1,29 @@
+• Mention name or email Id: Chintan Vaja - chintanvaja007@gmail.com 
+
+• Task Title: My ToDo List
+
+• Task Description: Developed a ToDo list application for task management.
+
+• Steps Taken: 
+    1. Planned features and designed the interface.
+    2. Implemented HTML structure and styled with CSS.
+    3. Added dynamic functionality using JavaScript and jQuery.
+    4. Conducted thorough testing and debugging.
+
+• Challenges Faced: 
+    1. Balancing simplicity with functionality in UI design.
+    2. Managing asynchronous behavior in JavaScript.
+    3. Ensuring cross-browser compatibility.
+
+• Solutions Implemented: 
+    1. Streamlined UI for ease of use.
+    2. Utilized promises and asynchronous functions.
+    3. Employed browser testing tools and collaboration.
+
+• Learnings: 
+    1. Prioritizing user experience in interface design.
+    2. Mastering asynchronous programming techniques.
+    3. Enhancing testing and debugging skills.
+    4. Valuing collaborative problem-solving.
+
+• Project Update: Task Completed.
